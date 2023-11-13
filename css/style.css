@@ -1,0 +1,90 @@
+* {
+    outline: 1px solid tomato;
+}
+
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    line-height: 80px;
+}
+
+.Header h1 {
+    font-size: 0;
+}
+
+.Header .Header_wrap {
+    display: flex;
+    margin: 0 auto;
+    /* padding: 0 80px; */
+    max-width: 1200px;
+    gap: 40px;
+}
+
+.Header .Header_wrap .Gnb {
+    top: 0;
+    left: 50%;
+}
+
+.Header .Header_wrap .Gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+.Header .Header_wrap .Gnb>ul>li>a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.Header .Header_wrap .util {
+    margin: 0 0 0 auto;
+    font-size: 24px;
+}
+
+.Header .Header_wrap .util i {
+    font-size: 28px;
+    color: #fff;
+}
+
+.MainSlide .visual_slide .itm {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+}
+
+.MainSlide .visual_slide .itm01 {
+    background: url(../images/MainSlide01.jpg) no-repeat center center/cover;
+}
+.MainSlide .visual_slide .itm02 {
+    background: url(../images/MainSlide02.jpg) no-repeat center center/cover;
+}
+.MainSlide .visual_slide .itm03 {
+    background: url(../images/MainSlide03.jpg) no-repeat center center/cover;
+}
+.MainSlide .visual_slide .itm04 {
+    background: url(../images/MainSlide04.jpg) no-repeat center center/cover;
+}
+
+.MainSlide .visual_slide .slogan {
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    width: 100%;
+}
+
+.MainSlide .visual_slide .slogan strong {
+    display: block;
+    margin: 0 0 24px 0;
+    font-size: 72px;
+    font-weight: 300;
+    color: #fff;
+}
+.MainSlide .visual_slide .slogan p {
+    font-size: 32px;
+    font-weight: 100;
+    color: #fff;
+}
