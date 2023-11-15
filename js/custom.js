@@ -24,6 +24,13 @@ $(function(){
         $('.MainVisual .num strong').text(c + 1);
     })
 
+    $('.MainVisual .arrows .left').on('click', function(){
+        $('.main_slide .business_slide').slick('slickPrev');
+    });
+    $('.MainVisual .arrows .right').on('click', function(){
+        $('.main_slide .business_slide').slick('slickNext');
+    });
+
 
     
 })
