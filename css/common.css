@@ -1,0 +1,21 @@
+.default {
+    padding: 100px 0;
+}
+
+.default .title {
+    max-width: 1200px;
+    margin: 0 auto 32px auto;
+    padding: 0 0 16px 0;
+    text-align: center;
+}
+
+.default .title h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0 0 16px 0;
+}
+
+.default .title p {
+    font-size: 18px;
+    font-weight: 300;
+}
