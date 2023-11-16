@@ -9,6 +9,14 @@ $(function(){
         fade: true,
         cssEase: 'linear'
     });
+    $(window).on('scroll', function (){
+        const scrollHeight = $(window).scrollTop();
+        if(scrollHeight > 0) {
+        $('.Header').addClass('on')
+        }else {
+        $('.Header').removeClass('on')
+        }
+    });
 
     $('.MainVisual .business_slide').slick({
         dots: false,
