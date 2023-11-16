@@ -149,7 +149,7 @@
     bottom: 50px;
     right: 80px;
     width: 500px;
-    height: 220px;
+    height: 240px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
 
@@ -172,6 +172,43 @@
     line-height: 24px;
     letter-spacing: -0.01em;
 }
+
+.MainVisual .business_slide .txt_box .link {
+    text-align: right;
+}
+
+.MainVisual .business_slide .txt_box .link a {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    width: 60px;
+    border: none;
+    box-sizing: border-box;
+    padding: 14px 0 14px 14px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.MainVisual .business_slide .txt_box .link a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #fff;
+}
+
+.MainVisual .business_slide .txt_box .link a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 8px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(45deg);
+    transform-origin: right;
+}
+
 
 
 .MainVisual .arrows {
@@ -224,15 +261,14 @@
 }
 
 .MainContent {
-    background: #f9f9f9;
+    background: #f3f3f3;
 }
 
 .MainContent .inner_content {
     display: flex;
     width: 1200px;
     margin: 0 auto;
-    gap: 20px;
-
+    gap: 15px;
 }
 
 .MainContent .inner_content>* {
@@ -242,18 +278,22 @@
 
 .MainContent .inner_content figure {
     position: relative;
+}
 
+.MainContent .inner_content figure img {
+    width: 100%;
+    height: 100%;
 }
 
 .MainContent .inner_content figure .img_box {
     overflow: hidden;
-    width: 400px;
-    height: 680px;
+    width: 390px;
+    height: 690px;
 }
 
 .MainContent .inner_content figure .inner_text {
     position: absolute;
-    top: 495px;
+    top: 480px;
     left: 0;
     width: 100%;
     padding: 0 35px;
@@ -273,7 +313,45 @@
     color: #fff;
     font-weight: 300;
     line-height: 24px;
+    margin: 0 0 24px 0;
 }
+
+.MainContent .inner_content figure .inner_text .link {
+    text-align: right;
+}
+
+.MainContent .inner_content figure .inner_text .link a {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    width: 60px;
+    border: none;
+    box-sizing: border-box;
+    padding: 14px 0 14px 14px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.MainContent .inner_content figure .inner_text .link a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #fff;
+}
+
+.MainContent .inner_content figure .inner_text .link a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 8px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(45deg);
+    transform-origin: right;
+}
+
 
 .MainContent .inner_content figure img {
     transition: 0.6s;
@@ -282,4 +360,160 @@
 .MainContent .inner_content figure:hover img {
     transform: scale(1.1);
     transition: 0.2s;
+}
+
+.MainNews_box .MainNewsList {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 2px solid #a0a0a0;
+    border-top: 2px solid #a0a0a0;
+}
+
+.MainNews_box .MainNewsList li {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    gap: 20px;
+    height: 80px;
+}
+
+.MainNews_box .MainNewsList li~li {
+    border-top: 2px solid #e8e8e8;
+}
+
+.MainNewsList li a {
+    border: 1px solid #a6a6a6;
+    color: #a6a6a6;
+    font-size: 12px;
+    padding: 4px 12px;
+}
+
+.MainNewsList li span {
+    color: #a6a6a6;
+    font-size: 12px;
+}
+
+.MainNewsList i {
+    margin: 0 0 0 auto;
+    cursor: pointer;
+    color: #a6a6a6;
+}
+
+
+.MainNewsMore {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0 0 0;
+}
+
+.MainNewsMore a {
+    border: 1px solid #3a3a3a;
+    padding: 12px 40px;
+    align-items: center;
+    color: #a6a6a6;
+}
+
+.MainSns {
+    background: #f3f3f3;
+}
+
+.MainSns .sns_content {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.MainSns .sns_content>* {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+
+.MainSns .sns_content .sns_text {
+    display: flex;
+    flex: 1;
+    background: #b4a1aa;
+}
+
+.MainSns .sns_content .sns_text i {
+    height: 46px;
+    color: #fff;
+    line-height: 16px;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 15px 10px;
+}
+
+.MainSns .sns_content .sns_text strong {
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.MainSns .sns_content .sns_text .link {
+    text-align: right;
+}
+
+.MainSns .sns_content .sns_text .link a {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    width: 60px;
+    border: none;
+    box-sizing: border-box;
+    padding: 14px 0 14px 14px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.MainSns .sns_content .sns_text .link a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #fff;
+}
+
+.MainSns .sns_content .sns_text .link a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 8px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(45deg);
+    transform-origin: right;
+}
+
+.MainSns .sns_content figure .img_box {
+    overflow: hidden;
+    max-height: 390px;
+    border-bottom: 1px solid #b4a1aa;
+    border-left: 1px solid #b4a1aa;
+    border-right: 1px solid #b4a1aa;
+}
+
+.MainSns .sns_content figure img {
+    transition: 0.5s;
+}
+
+.MainSns .sns_content figure:hover img {
+    transform: scale(1.1);
+}
+
+.MainSns .sns_content figure:hover .sns_text {
+    background: #9e1c4e;
+}
+
+.MainSns .sns_content figure:hover .img_box {
+    border-bottom: 1px solid #9e1c4e;
+    border-left: 1px solid #9e1c4e;
+    border-right: 1px solid #9e1c4e;
 }

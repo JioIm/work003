@@ -19,3 +19,36 @@
     font-size: 18px;
     font-weight: 300;
 }
+
+
+.link a {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    width: 60px;
+    border: none;
+    box-sizing: border-box;
+    padding: 14px 0 14px 14px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.link a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #fff;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 8px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(45deg);
+    transform-origin: right;
+}
