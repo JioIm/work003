@@ -1,6 +1,6 @@
-/* * {
-    outline: 1px solid tomato;
-} */
+* {
+    outline: 1px solid turquoise--;
+}
 
 .Header {
     position: fixed;
@@ -9,9 +9,29 @@
     right: 0;
     z-index: 999;
     line-height: 80px;
-    background-color: transparent
+
+    /* color: #fff; */
+    border-bottom: 1px solid transparent
 }
 
+.Header:hover {
+    color: #202124;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.Header.on {
+    color: #202124;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    line-height: 70px;
+}
+
+.Header:hover.on {
+    color: #202124;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
 
 .Header h1 {
     font-size: 0;
@@ -24,7 +44,7 @@
     /* padding: 0 80px; */
     max-width: 1200px;
     gap: 40px;
-    
+
 }
 
 .Header .Header_wrap .Gnb {
@@ -48,6 +68,10 @@
 }
 
 .Header:hover .Header_wrap .Gnb>ul>li>a {
+    color: #333;
+}
+
+.Header.on .Header_wrap .Gnb>ul>li>a {
     color: #333;
 }
 
@@ -380,7 +404,7 @@
 }
 
 .MainContent .inner_content figure .inner_text p {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     font-weight: 300;
     line-height: 24px;
@@ -508,7 +532,7 @@
 
 .MainSns .sns_content .sns_text {
     display: flex;
-    flex: 1;
+    align-items: center;
     background: #b4a1aa;
 }
 
@@ -528,7 +552,7 @@
 }
 
 .MainSns .sns_content .sns_text .link {
-    text-align: right;
+    margin: 0 0 0 auto;
 }
 
 .MainSns .sns_content .sns_text .link a {
@@ -541,6 +565,7 @@
     padding: 14px 0 14px 14px;
     background: transparent;
     cursor: pointer;
+    margin: 0 15px 0 0;
 }
 
 .MainSns .sns_content .sns_text .link a::before {
@@ -589,76 +614,88 @@
     border-right: 1px solid #9e1c4e;
 }
 
-.Footer {
-    background: #828282;
-    height: 250px;
-}
-
-.Footer .inner_wrap {
-    display: block;
-    text-align: left;
-    width: 1200px;
-}
-
-.Footer .logo {
-    margin: 0 50px 0 20px;
-}
-
-.Footer .footer_menu {
+.Footer .inner {
     display: flex;
-    margin: 0 100px 0 150px;
-    padding: 0 0 50px 0;
-    line-height: 200%;
-    border-bottom: 1px solid #ddd;
-}
-
-.Footer .footer_menu dl>dt strong {
-    word-break: keep-all;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 0 50px;
-}
-
-.Footer .footer_menu dl>dt>ul>li {
-    padding: 0 50px;
-    font-size: 15px;
-    font-weight: 300;
-    cursor: pointer;
-}
-
-.Footer .footer_menu dl>dt>ul>li>* {
-    word-break: keep-all;
-}
-
-.Footer .address {
+    justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content_box {
+    flex: 1;
+    margin: 0 0 0 80px;
+}
+
+.Footer {
+    padding: 0 0 30px 0;
+    background-position: 90% 50%;
+    background: #828282;
+}
+
+.Footer .address_wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Footer .customer_area {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    height: 60px;
+    margin: 0 0 32px 0;
 }
 
-.Footer .address .ul_wrap ul>li {
-    padding: 20px 0 0 50px;
-    margin: 0 100px 0 150px;
+.Footer .customer_area ul {
+    display: flex;
+    gap: 60px;
+    margin: 0 80px 0 0;
 }
 
-.Footer .address .ul_wrap ul>li strong {
-    font-size: 16px;
-    font-weight: 500;
-    margin: 5px 0;
-}
-.Footer .address .ul_wrap ul>li span{
-    font-size: 15px;
-    font-weight: 300;
+.Footer .customer_area ul>li a {
+    font-size: 14px;
+    line-height: 60px;
+    color: #ebe8e9;
 }
 
-.Footer .sns {
-    margin: 0 150px 0 auto;
+.Footer .customer_area .link .lnk {
+    display: block;
+    padding: 5px 20px;
+    background: #767475;
+    font-size: 14px;
+    line-height: 60px;
+    color: #ebe8e9;
+    border: none;
+    outline: none;
+}
+
+.Footer .address_wrap {
+    display: flex;
     justify-content: space-between;
 }
 
-.Footer .sns li span {
-    font-size: 15px;
-    font-weight: 300;
-    margin: 0 20px 0 0 ;
+.Footer .address_wrap .cu ul {
+    margin: 0 0 24px 0;
+}
+
+.Footer .address_wrap .cu ul>li {
+    color: #d3d3d3;
+    font-size: 13px;
+}
+
+.Footer .address_wrap .cu address {
+    color: #d3d3d3;
+    font-size: 13px;
+}
+
+.Footer .address_wrap .cu ul li:not(:last-child) {
+    margin: 0 0 8px 0;
+}
+
+.Footer .address_wrap .sns strong {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ebe8e9;
+    margin: 0 10px 0 0;
 }
